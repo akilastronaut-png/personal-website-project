@@ -1,6 +1,6 @@
 const particles = document.getElementById("particles");
 
-for (let i = 0; i < 150; i++) {
+for (let i = 0; i < 300; i++) {
 
     const particle = document.createElement("div");
 
