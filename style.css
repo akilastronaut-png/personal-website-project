@@ -127,6 +127,17 @@ h1 {
     font-size: 16px;
 }
 
+.box a {
+    color: lime;
+    font-family: Courier;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.box a:hover {
+    color: cyan;
+}
+
 #particles {
     position: fixed;
     top: 0;
