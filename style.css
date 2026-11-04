@@ -14,6 +14,82 @@ h1 {
     color: limegreen;
 }
 
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.pink {
+    color: pink;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.lime {
+    color: lime;
+}
+
+.limegreen {
+    color: limegreen;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.gray {
+    color: gray;
+}
+
+.lightgray {
+    color: lightgray;
+}
+
+.darkgray {
+    color: darkgray;
+}
+
+.brown {
+    color: brown;
+}
+
+.gold {
+    color: gold;
+}
+
+.silver {
+    color: silver;
+}
+
 .navbar {
     background-color: #222;
     padding: 10px;
