@@ -1,0 +1,247 @@
+body {
+    background-color:black;
+}
+
+p {
+    text-align: center;
+    font-family: Courier;
+    color: cyan;
+}
+
+h1 {
+    text-align: center;
+    font-family: Courier;
+    color: limegreen;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.pink {
+    color: pink;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.lime {
+    color: lime;
+}
+
+.limegreen {
+    color: limegreen;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.gray {
+    color: gray;
+}
+
+.lightgray {
+    color: lightgray;
+}
+
+.darkgray {
+    color: darkgray;
+}
+
+.brown {
+    color: brown;
+}
+
+.gold {
+    color: gold;
+}
+
+.silver {
+    color: silver;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navbar a {
+    color: lightgray;
+    text-decoration: none;
+    font-family: Courier;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.navbar a.current {
+    color: lime;
+}
+
+.navbar a:hover {
+    color: cyan;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro p {
+    font-size: 22px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background-color: transparent;
+    color: cyan;
+
+    border: 2px solid cyan;
+
+    font-family: Courier;
+    font-size: 18px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+.line {
+    height: 2px;
+    width: 75%;
+    background-color: cyan;
+    margin: 50px auto;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fill > p {
+    width: 100%;
+}
+
+.fill h1 {
+    font-size: 50px;
+}
+
+.fill p {
+    font-size: 22px;
+}
+
+.credits {
+    font-size: 12px;
+    text-align: center;
+}
+
+.box {
+    padding: 10px;
+    background-color: #111;
+    border: 2px solid cyan;
+    width: 500px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.box:hover {
+    background-color: #222;
+    border: 2px solid limegreen;
+}
+
+.box h1 {
+    font-size: 25px;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+.box a {
+    text-decoration: none;
+    color: lime;
+    font-family: Courier;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.box a:hover {
+    color: cyan;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+
+    border-radius: 50%;
+}
