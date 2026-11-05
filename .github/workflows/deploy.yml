@@ -1,0 +1,63 @@
+
+name: Deploy Website to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare website
+        run: |
+          mkdir -p _site
+
+          cp -R "Assets" "_site/Assets"
+          cp -R "HTML" "_site/HTML"
+          cp -R "CSS & JS" "_site/CSS & JS"
+
+          cat > _site/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="refresh" content="0; url=HTML/index.html">
+              <title>Redirecting...</title>
+          </head>
+          <body>
+              <p>
+                  Redirecting...
+                  <a href="HTML/index.html">Click here</a>
+                  if you are not redirected.
+              </p>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
