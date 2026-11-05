@@ -200,6 +200,12 @@ h1 {
     background-color: #111;
     border: 2px solid cyan;
     width: 500px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.box:hover {
+    background-color: #222;
+    border: 2px solid limegreen;
 }
 
 .box h1 {
